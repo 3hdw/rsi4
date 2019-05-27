@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="637b9beb-db72-47b2-89fa-768cb7abc5fb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8082/Stream" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Stream.xsd" MetadataType="Schema" ID="d430445c-3f04-42ec-a623-a47772b56e58" SourceId="1" SourceUrl="http://localhost:8082/Stream?xsd=xsd0" />
+    <MetadataFile FileName="StreamService.wsdl" MetadataType="Wsdl" ID="a872aeb7-5864-4af7-b49c-eb219dc92bf4" SourceId="1" SourceUrl="http://localhost:8082/Stream?wsdl" />
+    <MetadataFile FileName="Stream.disco" MetadataType="Disco" ID="1d1f9624-da22-4489-90cc-c0e4c00766cb" SourceId="1" SourceUrl="http://localhost:8082/Stream?disco" />
+    <MetadataFile FileName="Stream1.xsd" MetadataType="Schema" ID="d56f7f25-f373-497d-ba7f-32bc36772077" SourceId="1" SourceUrl="http://localhost:8082/Stream?xsd=xsd2" />
+    <MetadataFile FileName="Stream2.xsd" MetadataType="Schema" ID="f58ee570-39e4-4c97-9cd3-788ff3b30d57" SourceId="1" SourceUrl="http://localhost:8082/Stream?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

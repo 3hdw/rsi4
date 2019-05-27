@@ -4,28 +4,27 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 
 namespace WCF4
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
+    [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        public void Funkcja1(string s1)
         {
-            return string.Format("You entered: {0}", value);
+            Console.WriteLine("...{0}: funkcja1 - start", s1);
+            Thread.Sleep(3000);
+            Console.WriteLine("...{0}: funkcja1 - stop", s1);
+            return;
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public void Funkcja2(string s2)
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            Console.WriteLine("...{0}: funkcja2 - start", s2);
+            Thread.Sleep(3000);
+            Console.WriteLine("...{0}: funkcja2 - stop", s2);
+            return;
         }
     }
 }
